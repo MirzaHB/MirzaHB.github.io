@@ -1,0 +1,121 @@
+nav{
+    display: flex;
+    justify-content: center;
+    color: purple;
+    font-weight: bold;
+    padding: 10px;
+    border-bottom: 1px solid grey;
+    border-top: 2px solid purple;   
+}
+nav div{
+    display: flex;
+    width: 60%;
+    justify-content: space-around;
+}
+nav a{
+    color: grey;
+    text-decoration: none;
+}
+
+img{
+    border-radius: 50%;
+    width: 250px;
+    height: 250px;
+}
+.everything{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.footer{
+    display: flex;
+    justify-content: center;
+    border-top: 1px solid rgb(186, 186, 186);
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+.content{
+    display: flex;
+    margin-top: 3.5%;
+    
+}
+
+.lside{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-right: 1px solid rgb(186, 186, 186);
+    margin-right: 3%;
+}
+
+.skills progress{
+    height: 30px;
+    width: 350px;
+}
+.interests .rside{
+    flex-direction: column;
+}
+.interests ul{
+    list-style: square;
+    line-height: 2;
+    font-size: 1.5rem;
+}
+.content a{
+    text-decoration: none;
+    color: purple;
+}
+.content .rside h2{
+    color: rgb(170, 170, 170);
+    font-size: 3rem;
+    font-family:'Times New Roman', Times, serif;
+}
+
+.tableFormat{
+    width: 100%;
+    font-size: 1.4rem;
+    border-spacing: 1rem;
+}
+
+.formatabout{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.about .lside{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-right: 1px solid rgb(186, 186, 186);
+    margin-right: 5%;
+}
+
+
+@media(max-width:600px){
+    .content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .lside,.about .lside{
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-right: 5%;
+        border: none;
+    }
+    .rside{
+        justify-content: center;
+        align-items: center;
+    }
+    .rside h2{text-align: center;}
+    nav div{
+        display: flex;
+        width: 100%;
+        justify-content: space-around;
+    }
+}
